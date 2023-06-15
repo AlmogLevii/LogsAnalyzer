@@ -20,7 +20,7 @@ public class LogsAnalyzer implements Runnable {
     private final Writer output;
 
 
-    //TODO: wrap the parameters with object called LogsAnalyzerParams ?
+    //TODO: wrap the parameters with object called LogsAnalyzerParams
     public LogsAnalyzer(Stream<String> streamLogs, FilterLog filters, ReverseDNSService reverseDNS, ServiceGetter serviceGetter, Writer output) {
         cloudServiceToIps = new HashMap<>();
         this.streamLogs = streamLogs;
